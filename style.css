@@ -1,0 +1,248 @@
+*{
+    margin: 0%;
+}
+
+body{
+    background: #ecf0f3;
+}
+
+nav{
+    background-color: #000b10;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    transition: all 0,3s ease;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    display:flex;
+}
+
+.posisilogo{
+    position: absolute;
+    right: 4rem;
+    bottom: 1rem;
+}
+
+.ukuranlogo{
+    height: 50px;
+    padding: 0px;
+}
+
+body nav ul{
+    display: inline-flex;
+    list-style: none;
+    padding: 10px;
+    gap: 50px;  
+}
+body nav ul li a{
+    color: #ecf0f3;
+    text-decoration: dashed #ecf0f3;
+    font-size: 17px;
+    font-family: poppins; 
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 2px solid rgba(255, 0, 0, 0);
+        }
+
+body nav ul li a:hover{
+    color: rgb(145, 145, 145);
+}
+
+.aboutme{
+    text-align: start;
+    padding: 5rem 8rem;
+    font-size: 28px;
+}
+
+.aboutme h1{
+    font-family: clash grotesk;
+}
+
+.aboutme p{
+    font-family: poppins;
+    text-align: start;
+    padding: 2rem 0rem;
+    font-size: 18px;
+}
+
+.Home{
+    text-align: start;
+    padding: 5rem 8rem;
+    font-size: 28px;
+}
+
+.Home h1{
+    font-family: clash grotesk;
+}
+
+.Home h3{
+    font-family: clash grotesk;
+    color: teal;
+}
+
+.Home p{
+    font-family: poppins;
+    text-align: start;
+    padding: 2rem 0rem;
+    font-size: 18px;
+}
+
+.img{
+    position: absolute;
+    right: 9rem;
+    bottom: 1rem;
+}
+
+.contact{
+    padding: 0px 15px 20px ;
+}
+
+.container{
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    background: #ecf0f3;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.icons img{
+    width: 40px;
+    height: 40px; 
+    margin: 20px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    transition: transform 0.2s ease; 
+}
+
+.icons img:hover{
+    transform: scale(1.1);
+    background: #ecf0f3;
+    box-shadow: inset -1px -1px 3px #ffffff, inset 1px 1px 2px #ceced1;
+    border-radius: 50%;
+}
+
+.contact{
+    font-size: 24px;
+    text-align: center;
+    padding: 8rem;
+}
+
+.contact h3{
+    color: teal;
+}
+
+.isi{
+    display: block;
+    padding: 0px;
+    font-family: clash grotesk;
+}
+
+footer{
+background-color: #333;
+color: white;
+padding: 20px;
+text-align: center;
+width: 100%;
+font-family: poppins;
+}
+
+form {
+max-width: 600px;
+margin: auto;
+}
+
+label {
+display: block;
+margin: 10px 0 5px;
+text-align: left;
+}
+
+input, textarea, select {
+width: 100%;
+padding: 10px;
+margin: 5px 0 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+input[type="radio"] {
+margin-right: 10px;
+}
+
+.radio-group {
+text-align: left;
+}
+
+.radio-group label {
+margin-right: 20px;
+}
+
+button {
+padding: 10px 20px;
+background-color: #28a745;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #218838;
+}
+
+.posisimore{
+    position: absolute;
+    left: 8rem;
+    bottom: 2.5rem;
+
+}
+.ukuranmore{
+    font-family: poppins;
+    display: inline-block;
+    background-color: #000b10; 
+    color: white; 
+    padding: 10px 28px;
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ukuranmore:hover{
+    background-color: darkgray
+}
+
+.circle {
+    width: 450px; 
+    height: 450px; 
+    background-color: #414141; 
+    border-radius: 450px 0 0 0; 
+    position: absolute; 
+    left: 67.5%;
+    top: 25%;
+    box-shadow: 0 16px 58px rgba(0, 0, 0, 0.3);
+}
+
+.offline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.offline h1{
+    color: #333;
+    font-family: clash grotesk;
+    font-size: 42px;
+}
+
+.offline p{
+    color: #666;
+    font-size: 18px;
+}

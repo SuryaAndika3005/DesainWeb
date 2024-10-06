@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="app.js"></script>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); 
+            alert("Pesan Anda telah berhasil dikirim!");
+
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+           <li> <div class="img">
+                <img src="/images/UNAND.png" alt="" class="ukuranlogo">
+            </div>
+        </li>
+        <li class="posisilogo">
+            <div class="logo">
+                <img src="/images/LogoLKMMTDFTI2024.png" alt="" class="ukuranlogo">
+            </div>
+        </li>
+        </ul>
+    </nav>
+
+    <div class="isi">
+        <div class="contact">
+            <h1>THANK YOU!</h1>
+            <h3>FOR VISITING MY PORTFOLIO</h3>
+        </div>
+    </div>
+        <div class="container">
+            <div class="icons" id=""> 
+                <a href="https://facebook.com"><img src="/images/facebook.png" alt="facebook"></a>
+                <a href="https://linkedin.com/in/surya-andika"><img src="/images/linkedin.png" alt="linkedin"></a>
+                <a href="https://instagram.com/surdik_28"> <img src="/images/instagram.png" alt="instagram"></a>
+                <a href="https://github.com/SuryaAndika3005"><img src="/images/github.png" alt="github"></a>
+                <a href="https://www.tiktok.com/@surdik_"><img src="/images/tiktok.png" alt="tiktok"></a>
+        </div>
+    </div>  
+    <footer>
+        <h2>GET IN TOUCH</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+            <label for="kategori">Kategori Pesan:</label>
+            <select id="kategori" name="kategori" required>
+                <option value="">-- Pilih Kategori --</option>
+                <option value="pertanyaan">Pertanyaan</option>
+                <option value="saran">Saran</option>
+                <option value="masalah">Masalah</option>
+            </select>
+
+            <div class="radio-group">
+                <label>Apakah Anda ingin menerima balasan?</label>
+                <label><input type="radio" name="balasan" value="ya" required> Ya</label>
+                <label><input type="radio" name="balasan" value="tidak" required> Tidak</label>
+            </div>
+
+            <div class="submit">
+                <button type="submit">Kirim Pesan</button>
+            </div>
+        </form>
+    </footer>
+</body>
+</html>
